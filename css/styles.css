@@ -1,0 +1,21 @@
+body {
+  max-width: 738px;
+  margin: 0 auto;
+}
+
+.padding-left {
+  padding-left: 6%;
+}
+
+.font-italics {
+  font-style: italic;
+}
+
+.border-black {
+  border-color: #000000;
+}
+
+.text-black::placeholder {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
