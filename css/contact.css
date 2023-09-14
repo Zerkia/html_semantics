@@ -1,0 +1,13 @@
+/* not sure if needed */
+.font-italics {
+    font-style: italic;
+}
+
+.border-black {
+    border-color: #000000;
+}
+
+.text-black::placeholder {
+    color: #000000 !important;
+    opacity: 1 !important;
+}

@@ -1,21 +1,65 @@
-body {
-  max-width: 738px;
-  margin: 0 auto;
+/* Variables */
+
+:root{
+  --sladelightgrey: #778899;
 }
 
-.padding-left {
-  padding-left: 6%;
+/* CSS */
+
+/* Global Tags */
+body{
+  margin: 0;
+  box-sizing:border-box;
 }
 
-.font-italics {
-  font-style: italic;
+/* Classes */
+
+/* Header */
+
+.title {
+  background-color: indianred;
+  padding: 1rem 1rem 1rem 2.5rem;
+  margin: 0;
 }
 
-.border-black {
-  border-color: #000000;
+/* Doesn't stick, not sure why */
+.nav {
+  background-color: var(--sladelightgrey);
+  padding: 1rem 1rem 1rem 0.5rem;
+  position:sticky;
+  top: 0;
 }
 
-.text-black::placeholder {
-  color: #000000 !important;
-  opacity: 1 !important;
+.nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+.nav li{
+  display:inline;
+  margin-left:1rem;
+}
+
+.nav li a{
+  height:100%;
+  font-size:20px;
+  color:#fff;
+  text-decoration: none;
+}
+
+.nav li a.selected{
+  color:goldenrod;
+}
+
+/* Footer */
+
+.footer{
+  background-color:var(--sladelightgrey);
+  text-align:center;
+  padding:0.5rem 0;
+  width:100%;
+}
+
+.footer p{
+  margin:0;
 }
