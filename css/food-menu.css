@@ -1,0 +1,69 @@
+:root{
+    --lightyellow: #fafad2;
+}
+
+img{
+    width: 49%;
+    height: 49%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius:10px;
+}
+
+.row{
+    margin:0 -5px;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.column{
+    float:left;
+    width:49%;
+    height: 216px;
+    padding: 0 10px;
+    margin: 0.5%;
+    background-color: var(--lightyellow);
+    border-radius: 1rem;
+}
+
+.food-card{
+    padding:16px;
+    display: flex;
+}
+
+.card-left{
+    width: 40%;
+}
+
+.food-title{
+    margin-bottom:10px;
+}
+
+.food-description{
+    margin-bottom:10px;
+}
+
+.food-price{
+    background-color: var(--keaRed);
+    width: 65px;
+    padding: 0.25rem;
+    text-align: center;
+    border: 5px solid var(--keaBlue);
+    border-radius:0.5rem;
+    color:var(--white);
+}
+
+.card-right{
+    width: 60%;
+}
+
+.card-right img{
+    float:right;
+    width: 350px;
+    height: 185px;
+    border-radius:10px;
+}

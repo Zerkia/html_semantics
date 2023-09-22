@@ -1,28 +1,73 @@
 /* Need more knowledge, put to rest for now */
 
-.whitespace{
-    padding-left: 10rem;
-    padding-right: 20rem;
+:root{
+    --lightgrey: #d3d3d3;
 }
 
 .inline{
-    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    display: inline-flex;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .inline-left{
-    width:60%;
-    float: left;
+    width:75%;
+    float: inline-start;
     padding-right:1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inline-left p{
+    white-space:normal;
+}
+
+.inline-left li{
+    font-weight:600;
+}
+
+.attribute-list{
+    padding-left: 0.5rem;
+    padding-top: 0.75rem;
+}
+
+.attribute-list li{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--keaRed);
+    margin-bottom: 5px;
 }
 
 .inline-right{
-    padding-top:1rem;
-    width: 20%;
-    float: right;
+    width: 25%;
+    /* Not sure why this float doesn't work, but keeping it here in case of browser differences */
+    float:right;
 }
 
 .inline-right img{
-    max-width: 384px;
+    max-width: 388px;
     max-height: 243px;
+    width: 100%;
+    border-radius:10px;
+    float: right;
 }
+
+.quote{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--lightgrey);
+    margin-left:1rem;
+    margin-bottom: 1rem;
+}
+
+.quote blockquote{
+    margin:0;
+    padding-left:1rem;
+    padding-top:0.5rem;
+}
+
+.quote p{
+    padding-left: 2.5rem;
+    padding-bottom:0.5rem;
+}
+

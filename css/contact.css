@@ -1,13 +1,90 @@
-/* not sure if needed */
-.font-italics {
-    font-style: italic;
+:root{
+    --black: #000;
 }
 
-.border-black {
-    border-color: #000000;
+.inline{
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.text-black::placeholder {
-    color: #000000 !important;
-    opacity: 1 !important;
+.inline-left{
+    width:55%;
+    padding-right:1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inline-left p{
+    padding-bottom: 20px;
+}
+
+.inline-left p,
+.inline-left label{
+    font-size: 20px;
+    font-style: normal;
+}
+
+.inline-left fieldset{
+    font-size: 18px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    display: table;
+    width: 100%;
+}
+
+.inline-left legend{
+    padding: 0 5px;
+}
+
+.inline-left .form-table{
+    display: table-row;
+}
+
+.inline-left label{
+    padding-left: 3px;
+    padding-right: 35px;
+    display: table-cell; text-align: left;
+}
+
+.inline-left input{
+    display: table-cell;
+}
+
+/* Can't figure out why 100% isn't working, might be the table structure */
+.input-long{
+    width: 100%;
+}
+
+.further-info{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+fieldset input[type=submit]{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 7px;
+    height: 30px;
+    width: 60px;
+    font-size: 1rem;
+}
+
+.inline-right{
+    width: 45%;
+    /* Not sure why this float doesn't work, but keeping it here in case of browser differences */
+    float:right;
+}
+
+.inline-right img{
+    max-width: 800px;
+    max-height: 457px;
+    width: 100%;
+    border-radius:10px;
+    float: right;
+    border: 1px solid var(--black);
+    padding: 10px;
 }

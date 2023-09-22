@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>Document</title>
   </head>
   <body>
@@ -18,52 +19,50 @@
         </ul>
       </nav>
     </header>
-    <main>
 
-      <section>
-        <address>Guldbergsgade 29N 2200 Copenhagen</address>
-        <p class="font-italics">Phone no.: <a href="">20 82 53 70</a></p>
-        <p class="font-italics">E-mail: <a href="">info@restaurantkea.dk</a></p>
-  
-        <img src="img/map.jpg" alt="map.jpg" />
+    <main>
+      <section class="inline">
+        <article class="inline-left">
+          <p class="address">Guldbergsgade 29N <br> 2200 Copenhagen</p>
+          <p class="font-italics">Phone no.: <a href="">20 82 53 70</a></p>
+          <p class="font-italics">E-mail: <a href="">info@restaurantkea.dk</a></p>
+          
+          <fieldset>
+            <legend>Contact form</legend>
+            <div class="form-table">
+                <label for="full_name">Full name</label>
+                <input type="text" id="full_name" name="full_name" class="input-long" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+            </div>
+            <div class="form-table">
+                <label for="phone_no">Phone no.</label>
+                <input type="text" id="phone_no" name="phone_no" class="input-long" required pattern="[0-9]{8}">
+            </div>
+            <div class="form-table">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="input-long" required>
+            </div>                    
+            <div class="form-table">
+                <label for="persons">Persons</label>
+                <input type="number" id="persons" name="persons" value="1" required min="1" max="20">
+            </div>                    
+            <div class="form-table">
+                <label for="dateTime">Date and time</label>
+                <input type="datetime-local" id="dateTime" name="date_and_time" required>
+            </div>                                        
+            <div>
+                <label for="further_info">Further information</label>
+                <textarea id="further_info" class="further-info" name="further_info"></textarea>
+            </div>                                        
+            <input type="submit" value="Send">
+          </fieldset>
+        </article>
+
+        <article class="inline-right">
+          <img src="img/map.jpg" alt="map.jpg" />
+        </article>
       </section>
   
-      <section>
-        <fieldset class="border-black">
-          <legend>Contact Form</legend>
-          <table>
-            <tr>
-              <td><label for="fullname">Full Name</td>
-              <td><input id="fullname" type="text"></td>
-            </tr>
-            <tr>
-              <td><label for="phone"></label>Phone no.</td>
-              <td><input id="phone" type="number"></td>
-            </tr>
-            <tr>
-              <td><label for="email">E-mail</td>
-              <td><input id="email" type="email"></td>
-            </tr>
-            <tr>
-              <td><label for="persons"></label>Persons</td>
-              <td><input id="persons" type="number" placeholder="2" class="text-black"></td>
-            </tr>
-            <tr>
-              <td><label for="datetime"></label>Date and time</td>
-              <td><input id="datetime" type="datetime"></td>
-            </tr>
-            <tr>
-              <td><label for="moreinfo">Further information</td>
-              <td><textarea id="moreinfo"></textarea></td>
-            </tr>
-            <tr>
-              <td>
-                <button>Send</button>
-              </td>
-            </tr>
-          </table>
-        </fieldset>
-      </section>
+      
     </main>
     <footer class="footer">
       <p>&copy; 2023 KEA Development</p>
