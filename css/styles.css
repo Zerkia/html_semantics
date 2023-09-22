@@ -1,4 +1,4 @@
-/* Variables */
+/* VARIABLES */
 
 :root{
   --keaRed: #ea5047;
@@ -9,7 +9,7 @@
 
 /* CSS */
 
-/* Global Tags */
+/** GLOBAL TAGS **/
 
 *{
   padding:0;
@@ -28,9 +28,9 @@ main{
   box-sizing: border-box;
 }
 
-/* Classes */
+/** CLASSES **/
 
-/* Header */
+/*** HEADER ***/
 
 .title {
   background-color: var(--keaRed);
@@ -69,7 +69,7 @@ main{
   color: var(--goldenrod);
 }
 
-/* Footer */
+/*** FOOTER ***/
 
 .footer{
   background-color:var(--keaBlue);

@@ -1,6 +1,12 @@
+/* VARIABLES */
+
 :root{
     --lightyellow: #fafad2;
 }
+
+/* CSS */
+
+/** GLOBAL TAGS  **/
 
 img{
     width: 49%;
@@ -9,6 +15,10 @@ img{
     max-height: 100%;
     border-radius:10px;
 }
+
+/** CLASSES **/
+
+/*** CARD SETUP ***/
 
 .row{
     margin:0 -5px;
